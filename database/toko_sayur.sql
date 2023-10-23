@@ -89,7 +89,7 @@ CREATE TABLE `contacts` (
 --
 
 INSERT INTO `contacts` (`id`, `parent_id`, `name`, `subject`, `email`, `message`, `contact_date`, `status`, `reply_at`) VALUES
-(1, NULL, 'Agung Tri Saputra', 'Pengiriman kok lama?', 'martinms.za@gmail.com', 'pengiriman pesanan saya kok lama ya', '2020-03-29 07:40:13', 2, NULL);
+(1, NULL, 'Agung Tri Saputra', 'Pengiriman kok lama?', 'martinms.za@gmail.com', 'pengiriman pesanan saya kok lama ya', '2023-09-29 07:40:13', 2, NULL);
 
 -- --------------------------------------------------------
 
@@ -216,8 +216,8 @@ CREATE TABLE `payments` (
 --
 
 INSERT INTO `payments` (`id`, `order_id`, `payment_price`, `payment_date`, `picture_name`, `payment_status`, `confirmed_date`, `payment_data`) VALUES
-(4, 5, '271000.00', '2020-03-29 08:20:39', 'category-1.jpg', '1', NULL, '{\"transfer_to\":\"bri\",\"source\":{\"bank\":\"Bank BRI\",\"name\":\"Agung Tri Saputra\",\"number\":\"12-345-678-9\"}}'),
-(5, 7, '78000.00', '2020-03-30 08:51:08', 'html5.jpg', '2', NULL, '{\"transfer_to\":\"btn\",\"source\":{\"bank\":\"BANK BCA\",\"name\":\"MMS\",\"number\":\"123-456\"}}'),
+(4, 5, '271000.00', '2023-09-29 08:20:39', 'category-1.jpg', '1', NULL, '{\"transfer_to\":\"bri\",\"source\":{\"bank\":\"Bank BRI\",\"name\":\"Agung Tri Saputra\",\"number\":\"12-345-678-9\"}}'),
+(5, 7, '78000.00', '2023-09-30 08:51:08', 'html5.jpg', '2', NULL, '{\"transfer_to\":\"btn\",\"source\":{\"bank\":\"BANK BCA\",\"name\":\"MMS\",\"number\":\"123-456\"}}'),
 (6, 11, '130000.00', '2021-05-04 10:39:11', 'REAKSI_ARTILERI-removebg-preview.png', '1', NULL, '{\"transfer_to\":\"bank-jago-xx\",\"source\":{\"bank\":\"we\",\"name\":\"ddf\",\"number\":\"123\"}}');
 
 -- --------------------------------------------------------
@@ -246,17 +246,17 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `category_id`, `sku`, `name`, `description`, `picture_name`, `price`, `current_discount`, `stock`, `product_unit`, `is_available`, `add_date`) VALUES
-(1, 2, 'SB750372', 'Strawberry', NULL, 'category-2.jpg', '70000.00', '5000.00', 50, 'Kg', 1, '2020-03-26 15:02:52'),
-(2, 1, 'BS350420', 'Brokoli', NULL, 'product-6.jpg', '33000.00', '2000.00', 10, 'Kg', 1, '2020-03-26 15:03:40'),
-(4, 1, 'TS120790', 'Tomat', NULL, 'product-5.jpg', '10000.00', '0.00', 20, 'Kg', 1, '2020-03-26 19:36:30'),
-(5, 1, 'WS120811', 'Wortel', NULL, 'product-7.jpg', '12000.00', '0.00', 20, 'Kg', 1, '2020-03-26 19:36:51'),
-(8, 1, 'PS220885', 'Paprika', NULL, 'product-12.jpg', '20000.00', '0.00', 20, 'Kg', 1, '2020-03-26 19:38:05'),
-(9, 2, 'AB450163', 'Apel', NULL, 'product-10.jpg', '40000.00', '5000.00', 50, 'Kg', 1, '2020-03-26 19:42:43'),
-(10, 1, 'BMS120283', 'Bawang Merah', NULL, 'product-9.jpg', '12000.00', '0.00', 20, 'Kg', 1, '2020-03-26 19:44:42'),
-(11, 1, 'URS13301', 'Ubi Rambat', NULL, 'product-4.jpg', '15000.00', '0.00', 3, 'Kg', 1, '2020-03-26 19:45:01'),
-(12, 1, 'BPS15347', 'Bawang Putih', NULL, 'product-111.jpg', '15000.00', '0.00', 5, 'Kg', 1, '2020-03-26 19:45:47'),
-(13, 1, 'KPS223370', 'Kacang Polong', NULL, 'product-3.jpg', '20000.00', '0.00', 23, 'Kg', 1, '2020-03-26 19:46:10'),
-(14, 1, 'CMS410424', 'Cabai Merah', NULL, 'product-121.jpg', '40000.00', '7000.00', 10, 'Kg', 1, '2020-03-26 19:47:04');
+(1, 2, 'SB750372', 'Strawberry', NULL, 'category-2.jpg', '70000.00', '5000.00', 50, 'Kg', 1, '2023-09-26 15:02:52'),
+(2, 1, 'BS350420', 'Brokoli', NULL, 'product-6.jpg', '33000.00', '2000.00', 10, 'Kg', 1, '2023-09-26 15:03:40'),
+(4, 1, 'TS120790', 'Tomat', NULL, 'product-5.jpg', '10000.00', '0.00', 20, 'Kg', 1, '2023-09-26 19:36:30'),
+(5, 1, 'WS120811', 'Wortel', NULL, 'product-7.jpg', '12000.00', '0.00', 20, 'Kg', 1, '2023-09-26 19:36:51'),
+(8, 1, 'PS220885', 'Paprika', NULL, 'product-12.jpg', '20000.00', '0.00', 20, 'Kg', 1, '2023-09-26 19:38:05'),
+(9, 2, 'AB450163', 'Apel', NULL, 'product-10.jpg', '40000.00', '5000.00', 50, 'Kg', 1, '2023-09-26 19:42:43'),
+(10, 1, 'BMS120283', 'Bawang Merah', NULL, 'product-9.jpg', '12000.00', '0.00', 20, 'Kg', 1, '2023-09-26 19:44:42'),
+(11, 1, 'URS13301', 'Ubi Rambat', NULL, 'product-4.jpg', '15000.00', '0.00', 3, 'Kg', 1, '2023-09-26 19:45:01'),
+(12, 1, 'BPS15347', 'Bawang Putih', NULL, 'product-111.jpg', '15000.00', '0.00', 5, 'Kg', 1, '2023-09-26 19:45:47'),
+(13, 1, 'KPS223370', 'Kacang Polong', NULL, 'product-3.jpg', '20000.00', '0.00', 23, 'Kg', 1, '2023-09-26 19:46:10'),
+(14, 1, 'CMS410424', 'Cabai Merah', NULL, 'product-121.jpg', '40000.00', '7000.00', 10, 'Kg', 1, '2023-09-26 19:47:04');
 
 -- --------------------------------------------------------
 
@@ -298,8 +298,8 @@ CREATE TABLE `reviews` (
 --
 
 INSERT INTO `reviews` (`id`, `user_id`, `order_id`, `title`, `review_text`, `review_date`, `status`) VALUES
-(2, 7, 6, 'Sangat puas', 'Pengiriman cepat dan sayur segar', '2020-03-30 08:31:31', 1),
-(3, 7, 5, 'Buah segar', 'Buah segar dan kualitasnya sangat bagus', '2020-03-30 08:33:10', 1);
+(2, 7, 6, 'Sangat puas', 'Pengiriman cepat dan sayur segar', '2023-09-30 08:31:31', 1),
+(3, 7, 5, 'Buah segar', 'Buah segar dan kualitasnya sangat bagus', '2023-09-30 08:33:10', 1);
 
 -- --------------------------------------------------------
 
@@ -319,14 +319,14 @@ CREATE TABLE `settings` (
 
 INSERT INTO `settings` (`id`, `key`, `content`) VALUES
 (1, 'current_theme_name', 'vegefoods'),
-(2, 'store_name', 'Toko Sayur 22'),
-(3, 'store_phone_number', '082281666584'),
-(4, 'store_email', 'tokosayur22@gmail.com'),
-(5, 'store_tagline', 'Belanja Sayur Segar 24 Jam'),
+(2, 'store_name', 'Sembako Lan/Apong'),
+(3, 'store_phone_number', '0853-7772-2028'),
+(4, 'store_email', 'sembakoapong@gmail.com'),
+(5, 'store_tagline', 'BELANJA SEMBAKO MANTAP 24 Jam'),
 (6, 'store_logo', 'Logo.png'),
 (7, 'max_product_image_size', '20000'),
-(8, 'store_description', 'Belanja sayur dan buah dengan murah, mudah dan cepat'),
-(9, 'store_address', 'Jl. Medan Baru VI, RT 12 RW 06 Kel. Kandang Limun'),
+(8, 'store_description', 'Belanja Sembako dengan murah, mudah dan cepat'),
+(9, 'store_address', 'Jl. Serma wanar kelurahan besemah serasan kecamatan pagaralam selatan,kota pagar alam'),
 (10, 'min_shop_to_free_shipping_cost', '20000'),
 (11, 'shipping_cost', '3000'),
 (12, 'payment_banks', '{\"bank-jago-xx\":{\"bank\":\"BANK JAGO xx\",\"number\":\"123\",\"name\":\"Martin Mulyo Syahidin\"},\"bank-jagoss\":{\"bank\":\"BANK JAGOss\",\"number\":\"xs\",\"name\":\"as\"},\"bank-jagossxx\":{\"bank\":\"BANK JAGOssxx\",\"number\":\"asd\",\"name\":\"Admin Koramil\"}}');
@@ -355,7 +355,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `username`, `password`, `profile_picture`, `role`, `register_date`) VALUES
 (1, 'Admin Toko Sayur', 'admin@local.test', NULL, 'admin', '$2y$10$Brm3RNWFKvZ1e0ej1vBz9.QbFMW21q0l/iDSt5aDOoGj9zlLFuxh6', 'agung1.png', 'admin', NULL),
-(7, 'Customer Toko Sayur', 'customer@local.test', NULL, 'customer', '$2y$10$6C/A5Yy1gt4yhStWDWN1M.isBaznzDc.MZJdIj7UddW3.qIX5vDvK', NULL, 'customer', '2020-03-29 08:14:30'),
+(7, 'Customer Toko Sayur', 'customer@local.test', NULL, 'customer', '$2y$10$6C/A5Yy1gt4yhStWDWN1M.isBaznzDc.MZJdIj7UddW3.qIX5vDvK', NULL, 'customer', '2023-09-29 08:14:30'),
 (8, NULL, 'martinms.za@gmail.com', NULL, 'test', '$2y$10$gj4QxFnTj0dlpwJvT4aJiOM5UW6uCt7MdafC6VrnqsKDi0/JKmsLS', NULL, 'customer', '2021-05-07 10:25:08');
 
 --
